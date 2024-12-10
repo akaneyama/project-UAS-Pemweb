@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.pagination .page-link {
+    color: #ffffff;
+    background-color: #343a40; /* Warna dark */
+    border: 1px solid #6c757d;
+    transition: all 0.2s ease;
+}
+
+.pagination .page-link:hover {
+    color: #fff;
+    background-color: #007bff; /* Warna biru hover */
+    border-color: #007bff;
+}
+
+.pagination .active .page-link {
+    color: #ffffff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.pagination .disabled .page-link {
+    background-color: #6c757d;
+    color: #adb5bd;
+    border: 1px solid #6c757d;
+}
